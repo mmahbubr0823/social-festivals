@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
+import { authContext } from '../AuthProvider/MyAuthContext';
+import toast from 'react-hot-toast';
 
 const Login = () => {
-
+    const {logInUser} = useContext(authContext);
     const handleLogin = e =>{
         e.preventDefault();
         const email = e.target.email.value;
-        // console.log(email);
+        const password = e.target.password.value;
+
+        // login user 
+        logInUser(email, password)
+        .then(result =>{
+            toast.success('User successfully logged in')
+            
+        })
+        .catch(err =>{
+            toast.error('Your credentials do not match')
+        })
+
     }
     return (
         <div>
-            <div className="hero min-h-screen bg-base-200">
+            <div className="hero min-h-screen bg-base-200 mt-10 rounded-xl">
                 <div className="hero-content flex-col gap-16 lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                         <h1 className="text-5xl font-bold">Login now!</h1>
@@ -28,15 +42,16 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" placeholder="password" className="input input-bordered" required />
+                                <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <input type="submit" className='btn bg-purple-400 p-2 rounded' value ="Login" />
+                                <input type="submit" className='btn bg-purple-400 p-2 rounded-lg' value ="Login" />
                             </div>
                         </form>
+                        <SocialLogin></SocialLogin>
                         <p className="mb-6 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
                             New in here?
                             <Link

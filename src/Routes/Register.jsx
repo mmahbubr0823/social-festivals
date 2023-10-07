@@ -13,14 +13,13 @@ const Register = () => {
         const password = e.target.password.value;
         console.log(email, password);
 
-        if (!(/"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$"/).test(password)) {
+        if (!(/^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/).test(password)) {
             return toast.error('Your password should contain at least one upperCase, one special character and more than 6')
         }
 
         createUser(email, password)
             .then(result => {
                 toast.success('User successfully created')
-                // console.log(result);
             })
             .catch(err => {
                 toast.error(err.message)
@@ -32,7 +31,7 @@ const Register = () => {
 
     return (
         <div>
-            <div className="hero min-h-screen bg-base-200 rounded-xl">
+            <div className="hero min-h-screen bg-base-200 rounded-xl mt-10">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="card lg:w-[450px] flex-shrink-0 w-full max-w-sm shadow-2xl">
                         <form onSubmit={handleRegister} className="card-body ">
@@ -54,7 +53,7 @@ const Register = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <input type="submit" className='btn bg-[#eb6a6a] p-2 rounded' value="Register" />
+                                <input type="submit" className='btn bg-[#eb6a6a] p-2 rounded-lg' value="Register" />
                             </div>
                         </form>
                         <p className="mb-6 block text-center font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
