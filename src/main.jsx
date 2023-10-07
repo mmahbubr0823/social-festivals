@@ -12,6 +12,7 @@ import Register from './Routes/Register';
 import MyAuthContext from './AuthProvider/MyAuthContext';
 import EventDetails from './EventDetails/EventDetails';
 import PrivateRoute from './Routes/PrivateRoute';
+import Error404 from './NotFound/Error404';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
         path: '/register',
         element: <Register></Register>
 
+      },
+      {
+        path:'*',
+        element:<Error404></Error404>
       },
       {
         path:'/eventDetails/:id',
