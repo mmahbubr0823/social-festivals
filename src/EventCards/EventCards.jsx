@@ -14,10 +14,13 @@ const EventCards = () => {
 
     // console.log(eventCards);
     return (
-        <div className='grid grid-cols-3 gap-8 my-10'>
+        <div>
+            <h1 className='text-center text-5xl font-bold mt-10'>Our Services</h1>
+            <div className='grid grid-cols-3 gap-8 my-10'>
             {
                 eventCards.map(eventCard => <SingleCard key={eventCard.id} eventCard ={eventCard}></SingleCard>)
             }
+        </div>
         </div>
     );
 };
