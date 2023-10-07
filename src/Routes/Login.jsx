@@ -1,11 +1,14 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { authContext } from '../AuthProvider/MyAuthContext';
 import toast from 'react-hot-toast';
 
 const Login = () => {
     const {logInUser} = useContext(authContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+
     const handleLogin = e =>{
         e.preventDefault();
         const email = e.target.email.value;
@@ -14,11 +17,12 @@ const Login = () => {
         // login user 
         logInUser(email, password)
         .then(result =>{
-            toast.success('User successfully logged in')
+            toast.success('User successfully logged in');
+            navigate(location.state ? location.state : '/');
             
         })
         .catch(err =>{
-            toast.error('Your credentials do not match')
+            toast.error('Your credentials do not match');
         })
 
     }

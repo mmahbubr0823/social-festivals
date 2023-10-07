@@ -11,6 +11,7 @@ import Login from './Routes/Login';
 import Register from './Routes/Register';
 import MyAuthContext from './AuthProvider/MyAuthContext';
 import EventDetails from './EventDetails/EventDetails';
+import PrivateRoute from './Routes/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/eventDetails/:id',
-        element: <EventDetails></EventDetails>,
+        element: <PrivateRoute><EventDetails></EventDetails></PrivateRoute>,
         loader: ()=> fetch("./Data.json")
       }
     ]
