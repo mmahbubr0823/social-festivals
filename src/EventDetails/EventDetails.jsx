@@ -7,12 +7,12 @@ const EventDetails = () => {
    const {id} = useParams();
    const idInt = parseInt(id);
 
+   console.log(cardDetails);
 //    finding matching card 
    useEffect(()=>{
        const findEvent = eventCards.find(eventCard => eventCard.id ===idInt);
         setCardDetails(findEvent)
    }, [eventCards, idInt])
-   console.log(cardDetails);
 
 //    destructuring 
 const { img, title, price, details, discount } = cardDetails;

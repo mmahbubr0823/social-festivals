@@ -18,7 +18,7 @@ const Login = () => {
         logInUser(email, password)
         .then(result =>{
             toast.success('User successfully logged in');
-            navigate(location.state ? location.state : '/');
+           navigate('/')
             
         })
         .catch(err =>{
