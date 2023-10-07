@@ -10,6 +10,7 @@ import Home from './Routes/Home';
 import Login from './Routes/Login';
 import Register from './Routes/Register';
 import MyAuthContext from './AuthProvider/MyAuthContext';
+import EventDetails from './EventDetails/EventDetails';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
         path: '/register',
         element: <Register></Register>
 
+      },
+      {
+        path:'/eventDetails/:id',
+        element: <EventDetails></EventDetails>,
+        loader: ()=> fetch("./Data.json")
       }
     ]
   },

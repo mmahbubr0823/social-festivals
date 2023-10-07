@@ -11,8 +11,6 @@ const Register = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
-
         if (!(/^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/).test(password)) {
             return toast.error('Your password should contain at least one upperCase, one special character and more than 6')
         }
@@ -23,7 +21,6 @@ const Register = () => {
             })
             .catch(err => {
                 toast.error(err.message)
-                console.log(err);
             })
 
 

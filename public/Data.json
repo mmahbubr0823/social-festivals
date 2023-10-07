@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "img": "birthday.jpg",
+      "img": "https://i.ibb.co/NNNWnDq/couples-celebrating-birthday.jpg",
       "title": "Birthday Party Celebration",
       "price": "$200 - $500",
       "ratings": 4.8,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "img": "anniversary.jpg",
+      "img": "https://i.ibb.co/GH7S4Jd/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony.jpg",
       "title": "Marriage Anniversary",
       "price": "$300 - $1000",
       "ratings": 4.9,
@@ -19,7 +19,7 @@
     },
     {
       "id": 3,
-      "img": "baby-shower.jpg",
+      "img": "https://i.ibb.co/xXhdmcJ/small-baby-lies-basket-with-plaid.jpg",
       "title": "Baby Shower",
       "price": "$150 - $400",
       "ratings": 4.7,
@@ -28,7 +28,7 @@
     },
     {
       "id": 4,
-      "img": "wedding.jpg",
+      "img": "https://i.ibb.co/GH7S4Jd/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony.jpg",
       "title": "Wedding Ceremony",
       "price": "$500 - $10,000",
       "ratings": 4.9,
@@ -37,7 +37,7 @@
     },
     {
       "id": 5,
-      "img": "graduation.jpg",
+      "img": "https://i.ibb.co/fN6Sv3d/group-young-afro-american-female-students-dressed-black-graduation-gown-campus-as-background.jpg",
       "title": "Graduation Party",
       "price": "$100 - $500",
       "ratings": 4.6,
@@ -46,7 +46,7 @@
     },
     {
       "id": 6,
-      "img": "retirement.jpg",
+      "img": "https://i.ibb.co/zbgBhdR/senior-people-celebrating-together.jpg",
       "title": "Retirement Celebration",
       "price": "$200 - $1000",
       "ratings": 4.7,
