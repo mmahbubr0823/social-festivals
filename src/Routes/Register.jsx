@@ -4,17 +4,17 @@ import { authContext } from '../AuthProvider/MyAuthContext';
 import toast from 'react-hot-toast';
 
 const Register = () => {
-
     const { createUser } = useContext(authContext);
-
+// handling form data 
     const handleRegister = e => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
+        // password validation 
         if (!(/^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/).test(password)) {
             return toast.error('Your password should contain at least one upperCase, one special character and more than 6')
         }
-
+        // creating user 
         createUser(email, password)
             .then(result => {
                 toast.success('User successfully created')
@@ -22,8 +22,6 @@ const Register = () => {
             .catch(err => {
                 toast.error(err.message)
             })
-
-
     }
 
     return (

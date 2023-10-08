@@ -24,17 +24,14 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
-
       },
       {
         path: '/login',
         element: <Login></Login>
-
       },
       {
         path: '/register',
         element: <Register></Register>
-
       },
       {
         path: '*',
@@ -42,16 +39,16 @@ const router = createBrowserRouter([
       },
       {
         path: '/eventDetails/:id',
-        loader: () => fetch("./Data.json"),
+        loader: () => fetch("/Data.json"),
         element: <PrivateRoute><EventDetails></EventDetails></PrivateRoute>,
       },
       {
         path: '/about',
-        element: <AboutUs></AboutUs>
+        element: <PrivateRoute><AboutUs></AboutUs></PrivateRoute>
       },
       {
         path: '/gallery',
-        element: <Gallery></Gallery>
+        element: <PrivateRoute><Gallery></Gallery></PrivateRoute>
       }
     ]
   },
