@@ -27,7 +27,8 @@ const { img, title, price, details, discount } = cardDetails;
                         <p>
                            <span className='font-bold'> Price</span>:{price}
                         </p>
-                        <p className="mt-4 font-bold text-[#f1ab43] text-2xl">{discount}</p>
+                        <p className="mt-4 font-bold text-[#f1ab43] text-2xl">Discount: 
+                         { discount}</p>
                     </div>
                     <div className="card-actions justify-center">
                         <Link className="bg-[#f55151] text-white py-1 rounded-md mt-5 w-full text-center" to="/"><button >Back</button></Link>
