@@ -12,7 +12,7 @@ const SingleCard = ({ eventCard }) => {
                     <p>{`${details.slice(0, 80)}`}</p>
                     <div>
                         <p>
-                           <span className='font-bold'> Price</span>:{price}
+                            <span className='font-bold'> Price</span>:{price}
                         </p>
                     </div>
                     <div className="card-actions justify-center">

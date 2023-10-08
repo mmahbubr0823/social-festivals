@@ -3,7 +3,7 @@ import { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
 
 export const authContext = createContext(null);
-const MyAuthContext = ({children}) => {
+const MyAuthContext = ({ children }) => {
     const googleProvider = new GoogleAuthProvider();
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -11,25 +11,25 @@ const MyAuthContext = ({children}) => {
 
 
     // create user 
-    const createUser = (email, password) =>{
+    const createUser = (email, password) => {
         setLoading(true)
-      return  createUserWithEmailAndPassword(auth, email, password)
+        return createUserWithEmailAndPassword(auth, email, password)
     }
 
     // login user 
-    const logInUser = (email, password) =>{
+    const logInUser = (email, password) => {
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
 
     // social Login(google)
-    const googleLogIn =() =>{
+    const googleLogIn = () => {
         setLoading(true)
         return signInWithPopup(auth, googleProvider)
     }
     // sign out 
 
-    const logOut =() =>{
+    const logOut = () => {
         setLoading(true)
         return signOut(auth)
     }
@@ -37,11 +37,11 @@ const MyAuthContext = ({children}) => {
     // creating observer 
 
     useEffect(() => {
-        const unSubscribe = onAuthStateChanged(auth, currentUser =>{
+        const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser)
             setLoading(false);
         })
-        return ()=>{
+        return () => {
             unSubscribe()
         }
     }, [])
@@ -50,7 +50,7 @@ const MyAuthContext = ({children}) => {
         createUser,
         logInUser,
         googleLogIn,
-        logOut, 
+        logOut,
         user,
         loading
     }

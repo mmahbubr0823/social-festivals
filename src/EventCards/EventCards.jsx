@@ -6,21 +6,20 @@ const EventCards = () => {
 
     // fetch data 
 
-    useEffect(() =>{
+    useEffect(() => {
         fetch('./Data.json')
-        .then(res => res.json())
-        .then(data => setEventCards(data))
+            .then(res => res.json())
+            .then(data => setEventCards(data))
     }, [])
 
-    // console.log(eventCards);
     return (
         <div>
             <h1 className='text-center text-5xl font-bold mt-10'>Our Services</h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 my-10'>
-            {
-                eventCards.map(eventCard => <SingleCard key={eventCard.id} eventCard ={eventCard}></SingleCard>)
-            }
-        </div>
+                {
+                    eventCards.map(eventCard => <SingleCard key={eventCard.id} eventCard={eventCard}></SingleCard>)
+                }
+            </div>
         </div>
     );
 };

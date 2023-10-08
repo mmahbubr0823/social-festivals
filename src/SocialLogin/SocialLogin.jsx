@@ -2,19 +2,23 @@ import { useContext } from "react";
 import { FaGoogle } from "react-icons/fa6";
 import { authContext } from "../AuthProvider/MyAuthContext";
 import toast from "react-hot-toast";
+import { useLocation, useNavigate } from "react-router-dom";
 const SocialLogin = () => {
-    const {googleLogIn} = useContext(authContext);
+    const { googleLogIn } = useContext(authContext);
+    const location = useLocation();
+    const navigate = useNavigate();
 
 
     // social log in 
-    const handleGoogleLogin =()=>{
+    const handleGoogleLogin = () => {
         googleLogIn()
-        .then(result => {
-            toast.success('User successfully logged in')
-        })
-        .catch(err => {
-            toast.error(err.message)
-        })
+            .then(result => {
+                toast.success('User successfully logged in');
+                navigate(location?.state ? location.state : '/');
+            })
+            .catch(err => {
+                toast.error(err.message)
+            })
     }
     return (
         <div className='text-center'>

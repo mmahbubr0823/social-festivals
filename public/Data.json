@@ -1,57 +1,56 @@
 [
-    {
-      "id": 1,
-      "img": "https://i.ibb.co/NNNWnDq/couples-celebrating-birthday.jpg",
-      "title": "Birthday Party Celebration",
-      "price": "$200 - $500",
-      "ratings": 4.8,
-      "discount": "10% off for early bookings",
-      "details": "Birthday parties are a wonderful occasion to celebrate another year of life. They can range from small family gatherings to extravagant events with friends. Whether you're planning a surprise party or a themed celebration, birthdays are a time for joy, cake, and making unforgettable memories. You can hire entertainers, rent a venue, or host it at home. It's all about celebrating the person of honor and making them feel special. From kids' birthdays with clowns and balloons to adult parties with cocktails and live music, birthdays are a time to cherish."
-    },
-    {
-      "id": 2,
-      "img": "https://i.ibb.co/GH7S4Jd/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony.jpg",
-      "title": "Marriage Anniversary",
-      "price": "$300 - $1000",
-      "ratings": 4.9,
-      "discount": "15% off for couples",
-      "details": "Marriage anniversaries mark the milestones of love and commitment. They are a time for couples to reminisce about their journey together and reaffirm their love for each other. You can celebrate with a romantic dinner, a weekend getaway, or even a grand party with friends and family. The choice is yours. It's a time to exchange heartfelt gifts, share stories, and make promises for the future. Whether it's your first anniversary or your golden jubilee, each one is unique and worth celebrating with the love of your life."
-    },
-    {
-      "id": 3,
-      "img": "https://i.ibb.co/xXhdmcJ/small-baby-lies-basket-with-plaid.jpg",
-      "title": "Baby Shower",
-      "price": "$150 - $400",
-      "ratings": 4.7,
-      "discount": "Free gift for the first 20 guests",
-      "details": "Baby showers are a joyful celebration of the upcoming arrival of a new baby. They are usually organized by friends or family members of the expectant parents. Baby showers include games, gifts, and delicious treats. It's a time to shower the parents-to-be with love and presents to help them prepare for their new bundle of joy. You can choose cute themes, decorate the venue with baby-related items, and enjoy quality time with loved ones. Whether it's a boy, a girl, or a surprise, baby showers are filled with excitement and anticipation."
-    },
-    {
-      "id": 4,
-      "img": "https://i.ibb.co/GH7S4Jd/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony.jpg",
-      "title": "Wedding Ceremony",
-      "price": "$500 - $10,000",
-      "ratings": 4.9,
-      "discount": "20% off for bookings of 100 or more guests",
-      "details": "Weddings are one of the most significant celebrations in a person's life. They symbolize the union of two people in love. Wedding ceremonies can be intimate or grand, depending on your preferences and budget. You can choose from various wedding venues, themes, and styles. From traditional church weddings to beachfront ceremonies, weddings are a reflection of your love story. It's a day to exchange vows, rings, and promises of a lifetime together. The celebration continues with a reception filled with delicious food, dancing, and memorable moments with family and friends."
-    },
-    {
-      "id": 5,
-      "img": "https://i.ibb.co/fN6Sv3d/group-young-afro-american-female-students-dressed-black-graduation-gown-campus-as-background.jpg",
-      "title": "Graduation Party",
-      "price": "$100 - $500",
-      "ratings": 4.6,
-      "discount": "10% off for students with valid ID",
-      "details": "Graduation parties are a culmination of years of hard work and academic achievement. They celebrate the transition from one stage of life to another. Whether it's high school or college graduation, it's a time for students to shine and for families to express their pride. Graduation parties can be as simple as a backyard barbecue or as elaborate as a formal dinner. You can decorate with school colors and memorabilia, share stories of academic success, and look ahead to the future. It's a time to honor the graduate's accomplishments and offer encouragement for their next journey."
-    },
-    {
-      "id": 6,
-      "img": "https://i.ibb.co/zbgBhdR/senior-people-celebrating-together.jpg",
-      "title": "Retirement Celebration",
-      "price": "$200 - $1000",
-      "ratings": 4.7,
-      "discount": "15% off for retirees",
-      "details": "Retirement celebrations mark the end of a career and the beginning of a new chapter in life. They are a time for colleagues and friends to gather and express their appreciation for years of dedication and hard work. Retirement parties can be held at the workplace or a chosen venue and may include speeches, gifts, and well-wishes. It's a time for the retiree to reflect on their achievements and look forward to leisure, travel, and new experiences. Retirement is the perfect time to relax and enjoy the fruits of labor, and a celebration is a fitting send-off."
-    }
-  ]
-  
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/NNNWnDq/couples-celebrating-birthday.jpg",
+    "title": "Birthday Party Celebration",
+    "price": "$200 - $500",
+    "ratings": 4.8,
+    "discount": "10% off for early bookings",
+    "details": "Birthday parties are a wonderful occasion to celebrate another year of life. They can range from small family gatherings to extravagant events with friends. Whether you're planning a surprise party or a themed celebration, birthdays are a time for joy, cake, and making unforgettable memories. You can hire entertainers, rent a venue, or host it at home. It's all about celebrating the person of honor and making them feel special. From kids' birthdays with clowns and balloons to adult parties with cocktails and live music, birthdays are a time to cherish."
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/GH7S4Jd/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony.jpg",
+    "title": "Marriage Anniversary",
+    "price": "$300 - $1000",
+    "ratings": 4.9,
+    "discount": "15% off for couples",
+    "details": "Marriage anniversaries mark the milestones of love and commitment. They are a time for couples to reminisce about their journey together and reaffirm their love for each other. You can celebrate with a romantic dinner, a weekend getaway, or even a grand party with friends and family. The choice is yours. It's a time to exchange heartfelt gifts, share stories, and make promises for the future. Whether it's your first anniversary or your golden jubilee, each one is unique and worth celebrating with the love of your life."
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/xXhdmcJ/small-baby-lies-basket-with-plaid.jpg",
+    "title": "Baby Shower",
+    "price": "$150 - $400",
+    "ratings": 4.7,
+    "discount": "Free gift for the first 20 guests",
+    "details": "Baby showers are a joyful celebration of the upcoming arrival of a new baby. They are usually organized by friends or family members of the expectant parents. Baby showers include games, gifts, and delicious treats. It's a time to shower the parents-to-be with love and presents to help them prepare for their new bundle of joy. You can choose cute themes, decorate the venue with baby-related items, and enjoy quality time with loved ones. Whether it's a boy, a girl, or a surprise, baby showers are filled with excitement and anticipation."
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/GH7S4Jd/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony.jpg",
+    "title": "Wedding Ceremony",
+    "price": "$500 - $10,000",
+    "ratings": 4.9,
+    "discount": "20% off for bookings of 100 or more guests",
+    "details": "Weddings are one of the most significant celebrations in a person's life. They symbolize the union of two people in love. Wedding ceremonies can be intimate or grand, depending on your preferences and budget. You can choose from various wedding venues, themes, and styles. From traditional church weddings to beachfront ceremonies, weddings are a reflection of your love story. It's a day to exchange vows, rings, and promises of a lifetime together. The celebration continues with a reception filled with delicious food, dancing, and memorable moments with family and friends."
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/fN6Sv3d/group-young-afro-american-female-students-dressed-black-graduation-gown-campus-as-background.jpg",
+    "title": "Graduation Party",
+    "price": "$100 - $500",
+    "ratings": 4.6,
+    "discount": "10% off for students with valid ID",
+    "details": "Graduation parties are a culmination of years of hard work and academic achievement. They celebrate the transition from one stage of life to another. Whether it's high school or college graduation, it's a time for students to shine and for families to express their pride. Graduation parties can be as simple as a backyard barbecue or as elaborate as a formal dinner. You can decorate with school colors and memorabilia, share stories of academic success, and look ahead to the future. It's a time to honor the graduate's accomplishments and offer encouragement for their next journey."
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/zbgBhdR/senior-people-celebrating-together.jpg",
+    "title": "Retirement Celebration",
+    "price": "$200 - $1000",
+    "ratings": 4.7,
+    "discount": "15% off for retirees",
+    "details": "Retirement celebrations mark the end of a career and the beginning of a new chapter in life. They are a time for colleagues and friends to gather and express their appreciation for years of dedication and hard work. Retirement parties can be held at the workplace or a chosen venue and may include speeches, gifts, and well-wishes. It's a time for the retiree to reflect on their achievements and look forward to leisure, travel, and new experiences. Retirement is the perfect time to relax and enjoy the fruits of labor, and a celebration is a fitting send-off."
+  }
+]
