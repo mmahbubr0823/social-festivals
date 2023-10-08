@@ -4,8 +4,8 @@ const Features = () => {
         <div>
             <div>
                 <h1 className="text-4xl font-semibold text-center mt-20 mb-6">Why choose us?</h1>
-                <div className="flex justify-evenly items-center bg-[#e8f9f1] mb-10 rounded-lg p-8">
-                    <img className="w-[450px] h-[300px] rounded-xl" src="https://i.ibb.co/P4pzSbS/1198.jpg" alt="" />
+                <div className="lg:flex justify-evenly items-center bg-[#e8f9f1] mb-10 rounded-lg p-8">
+                    <img className="w-[450px] h-[300px] mb-5 rounded-xl" src="https://i.ibb.co/P4pzSbS/1198.jpg" alt="" />
                     <div>
                         <ul>
                             <li className="list-disc">Planning an event from start to finish.</li>

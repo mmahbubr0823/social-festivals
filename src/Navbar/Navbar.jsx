@@ -20,15 +20,15 @@ const Navbar = () => {
 
     const links = <>
 
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/register">Register</NavLink></li>
-        <li><NavLink to="/about">About us</NavLink></li>
-        <li><NavLink to="/gallery">Gallery</NavLink></li>
+        <li className="lg:mr-0"><NavLink to="/">Home</NavLink></li>
+        <li className="lg:mr-0"><NavLink to="/register">Register</NavLink></li>
+        <li className="lg:mr-0"><NavLink to="/about">About us</NavLink></li>
+        <li className="lg:mr-0"><NavLink to="/gallery">Gallery</NavLink></li>
     </>
     return (
         <div>
-            <div className="navbar bg-base-100 my-8">
-                <div className="navbar-start">
+            <div className="navbar block lg:flex bg-base-100 my-8">
+                <div className="lg:navbar-start block text-center">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -39,23 +39,21 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-2xl">Social <span className="text-[#fa4a4a]">Festivals</span> Arrangement</a>
+                    <a className=" normal-case lg:text-xl xl:text-2xl">Social <span className="text-[#fa4a4a]">Festivals</span> Arrangement</a>
                 </div>
-                <div className="navbar-center hidden lg:flex">
-
-                </div>
-                <div className="flex items-center navbar-end">
-                    <div className="mr-8">
-                        <ul className="menu menu-horizontal px-1">
+                <div className="flex items-center lg:navbar-center xl:navbar-end">
+                    <div className="lg:mr- xl:mr-8">
+                        <ul className="menu hidden lg:flex menu-horizontal px-1">
                             {
                                 links
                             }
+
                         </ul>
                     </div>
                     {
                         user ?
-                            <div>
-                                <div className="flex items-center gap-5">
+                            <div className="flex">
+                                <div className="md:flex items-center gap-5">
                                     <button onClick={handleLogOut} className="px-2 py-1 rounded-md bg-[#f56d6d]">Log out</button>
                                     <div className="">
                                         <h1>{user.displayName}</h1>
@@ -64,7 +62,7 @@ const Navbar = () => {
                                 </div>
                             </div>
                             :
-                            <div>
+                            <div className="flex">
                                 <div className="flex gap-4 items-center">
                                     <Link className="px-2 py-1 rounded-md bg-[#f56d6d]" to="/login">Login</Link>
                                     <CgProfile className="text-4xl"></CgProfile>

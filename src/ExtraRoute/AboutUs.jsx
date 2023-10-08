@@ -15,7 +15,7 @@ const AboutUs = () => {
                 </div>
                 <div>
                     <h1 className="text-3xl text-center font-bold my-5">Our key features and responsibility:</h1>
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 ml-5">
                         <li className="list-disc">Event goals and objectives.</li>
                         <li className="list-disc">Individual roles and responsibilities.</li>
                         <li className="list-disc">Event management software.</li>
@@ -28,7 +28,7 @@ const AboutUs = () => {
                 </div>
                 <div className="my-5">
                     <h1 className="text-3xl text-center font-bold mb-5">Contact us:</h1>
-                    <div className="grid grid-cols-3 gap-4">
+                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
                         <div>
                             <h1 className="font-bold">Head Office</h1>
                             <p>Level-4, 34, Awal Centre, Banani, Dhaka <br />
