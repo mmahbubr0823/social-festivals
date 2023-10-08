@@ -13,6 +13,8 @@ import MyAuthContext from './AuthProvider/MyAuthContext';
 import EventDetails from './EventDetails/EventDetails';
 import PrivateRoute from './Routes/PrivateRoute';
 import Error404 from './NotFound/Error404';
+import AboutUs from './ExtraRoute/AboutUs';
+import Gallery from './ExtraRoute/Gallery';
 
 const router = createBrowserRouter([
   {
@@ -35,13 +37,21 @@ const router = createBrowserRouter([
 
       },
       {
-        path:'*',
-        element:<Error404></Error404>
+        path: '*',
+        element: <Error404></Error404>
       },
       {
-        path:'/eventDetails/:id',
+        path: '/eventDetails/:id',
+        loader: () => fetch("./Data.json"),
         element: <PrivateRoute><EventDetails></EventDetails></PrivateRoute>,
-        loader: ()=> fetch("./Data.json")
+      },
+      {
+        path: '/about',
+        element: <AboutUs></AboutUs>
+      },
+      {
+        path: '/gallery',
+        element: <Gallery></Gallery>
       }
     ]
   },
